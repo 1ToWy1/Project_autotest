@@ -1,0 +1,12 @@
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+Add .gitignore for PyCharm
