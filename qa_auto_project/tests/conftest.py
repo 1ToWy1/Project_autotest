@@ -53,7 +53,6 @@ def driver(request: pytest.FixtureRequest) -> Generator[WebDriver, None, None]:
 
 @pytest.fixture(scope="function")
 def admin_driver(driver: WebDriver) -> WebDriver:
-    """Фикстура, которая открывает браузер и сразу авторизует администратора."""
     login_page = LoginPage(driver)
     login_page.login("admin", "admin")
     return driver
