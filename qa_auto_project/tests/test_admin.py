@@ -16,7 +16,6 @@ def test_create_product(admin_driver: WebDriver) -> None:
 
 @pytest.mark.id("8")
 def test_user_cannot_see_create_product_link(driver: WebDriver) -> None:
-    # Здесь оставляем driver, так как нужен вход под обычным покупателем, а не администратором
     login_page: LoginPage = LoginPage(driver)
     login_page.login("покупатель", "покупатель")
     admin: AdminPage = AdminPage(driver)
